@@ -20,7 +20,12 @@ responses:
   utter_botgreet:
   - text: How can i help you ?
   utter_veg_non_veg:
-  - text: what would you prefer veg or non-veg?
+  - buttons:
+    - payload: /vegetarian
+      title: Vegetarian
+    - payload: /non_veg
+      title: Non-Vegetarian
+    text: 'what would you prefer:'
   utter_veg:
   - text: we have mix veg,paneer butter masala,mushroom masala,etc?
   utter_non_veg:
